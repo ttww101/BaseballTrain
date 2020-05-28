@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SimPlayerRunVC" customModule="BaseballTrain" customModuleProvider="target">
+            <connections>
+                <outlet property="finishBtn" destination="pTp-0x-QHx" id="ALN-hK-4vL"/>
+                <outlet property="playerTable" destination="rTw-2x-y9C" id="1nQ-pa-kSL"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="rTw-2x-y9C">
+                    <rect key="frame" x="62" y="243.5" width="290" height="409"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="KmF-tN-iWW"/>
+                        <outlet property="delegate" destination="-1" id="fiM-hs-KaU"/>
+                    </connections>
+                </tableView>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pTp-0x-QHx">
+                    <rect key="frame" x="167" y="758" width="80" height="80"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="80" id="28H-W3-QdL"/>
+                        <constraint firstAttribute="width" constant="80" id="FZd-ro-iFR"/>
+                    </constraints>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" title="完成" backgroundImage="baseball_bt01">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="finishPressed:" destination="-1" eventType="touchUpInside" id="0lq-k9-YSr"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.4080961044520548" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="rTw-2x-y9C" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="9Ri-wF-CD2"/>
+                <constraint firstItem="rTw-2x-y9C" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="XJQ-B2-HXN"/>
+                <constraint firstItem="pTp-0x-QHx" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="au1-n5-bfm"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="pTp-0x-QHx" secondAttribute="bottom" constant="24" id="hnD-B6-2Zu"/>
+                <constraint firstItem="rTw-2x-y9C" firstAttribute="width" secondItem="fnl-2z-Ty3" secondAttribute="width" multiplier="0.7" id="rr7-12-u8v"/>
+                <constraint firstItem="rTw-2x-y9C" firstAttribute="height" secondItem="fnl-2z-Ty3" secondAttribute="height" multiplier="0.5" id="suA-bg-1mQ"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="baseball_bt01" width="169" height="169"/>
+    </resources>
+</document>

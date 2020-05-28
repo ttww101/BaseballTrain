@@ -1,0 +1,6 @@
+framework module Pods_BaseballTrain {
+  umbrella header "Pods-BaseballTrain-umbrella.h"
+
+  export *
+  module * { export * }
+}

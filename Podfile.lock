@@ -1,0 +1,68 @@
+PODS:
+  - Alamofire (4.8.2)
+  - FMDB (2.7.5):
+    - FMDB/standard (= 2.7.5)
+  - FMDB/standard (2.7.5)
+  - JCore (2.1.1)
+  - JPush (3.2.2-noidfa):
+    - JCore (< 3.0.0, >= 2.0.0)
+  - Kingfisher (5.7.1)
+  - LeanCloud (16.5.0):
+    - LeanCloud/IM (= 16.5.0)
+    - LeanCloud/Storage (= 16.5.0)
+  - LeanCloud/IM (16.5.0):
+    - FMDB (~> 2.7.0)
+    - LeanCloud/Storage
+    - Starscream (~> 3.1.0)
+    - SwiftProtobuf (~> 1.6.0)
+  - LeanCloud/Storage (16.5.0):
+    - Alamofire (~> 4.8.0)
+  - lottie-ios (3.1.2)
+  - MarqueeLabel (4.0.0)
+  - SnapKit (5.0.1)
+  - Starscream (3.1.0)
+  - SwiftProtobuf (1.6.0)
+  - YouTubePlayer-Swift (1.0)
+
+DEPENDENCIES:
+  - JPush (= 3.2.2-noidfa)
+  - Kingfisher
+  - LeanCloud
+  - lottie-ios
+  - MarqueeLabel
+  - SnapKit
+  - YouTubePlayer-Swift (~> 1.0)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - Alamofire
+    - FMDB
+    - JCore
+    - JPush
+    - Kingfisher
+    - LeanCloud
+    - lottie-ios
+    - SnapKit
+    - Starscream
+    - SwiftProtobuf
+    - YouTubePlayer-Swift
+  trunk:
+    - MarqueeLabel
+
+SPEC CHECKSUMS:
+  Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
+  FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
+  JCore: 4072327557f0b83cc22dd4041f2f839740c0077b
+  JPush: d7e9b68edde1e4061e8a61605049b1673cd89df2
+  Kingfisher: 176d377ad339113c99ad4980cbae687f807e20fe
+  LeanCloud: 08df0aa28a5242c8ac9850ac96c37163d153935d
+  lottie-ios: 49cd85b1f24f61a7708ad7ec76a523ab2d0e3100
+  MarqueeLabel: b55b26e690b6ad41faedd95cbf5eae6f1d1735b4
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
+  Starscream: 08172b481e145289c4930cb567230fb55897cfa4
+  SwiftProtobuf: e905ca1366405696411aaf174411c4b19c0ef73d
+  YouTubePlayer-Swift: ae82f4bcb504162a872b852596a9dc1fa3828c34
+
+PODFILE CHECKSUM: 92a8413f3bb4d9b09a1b0fb4ea287c57407cbc39
+
+COCOAPODS: 1.8.4
